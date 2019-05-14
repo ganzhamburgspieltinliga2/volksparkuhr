@@ -63,20 +63,22 @@ body {
 var abstieg = luxon.DateTime.local(2018,5,12,17,36,0)
 
 function tick() {
-    var jetzt = luxon.DateTime.local()
-    var vergangen = jetzt.diff(abstieg).toFormat("yy ddd hh mm ss").split(' ');
+    var diff = luxon.DateTime.local().diff(abstieg)
+    var vergangen = diff.toFormat("yy ddd hh mm ss").split(' ');
         
     document.getElementById("jahre").innerHTML = vergangen[0];
     document.getElementById("tage").innerHTML = vergangen[1];
     document.getElementById("stunden").innerHTML = vergangen[2];
     document.getElementById("minuten").innerHTML = vergangen[3];
     document.getElementById("sekunden").innerHTML = vergangen[4];
+    
+    document.title = diff.toFormat("'In der 2. Bundesliga seit:' y 'Jahren,' d 'Tagen,' h 'Stunden,' m 'Minuten,' s 'Sekunden'") ;
 }
 
 setInterval(tick, 1000);
 </script>
 </head>
-
+<meta name="description" content="So lange spielt der HSV schon in der 2. Bundesliga. Abstieg am 12. Mai 2018 um 17:36 nach dem Spiel am letzten Spieltag der Saison 2017/2018 gegen Borussia Mönchengladbach. Seitdem zeigt die Uhr im Volksparkstadion nicht mehr die Zeit in der 1. Bundesliga an.">
 <body>
 
 <h1>In der 2. Bundesliga seit:</h1>
