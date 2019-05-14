@@ -1,0 +1,107 @@
+<html>
+<head>
+<style>
+
+@font-face {
+    font-family: 'Digital-Numbers';
+    src:url('Digital-Numbers.ttf.woff') format('woff'),
+        url('Digital-Numbers.ttf.svg#Digital-Numbers') format('svg'),
+        url('Digital-Numbers.ttf.eot'),
+        url('Digital-Numbers.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alfa-Slab-One';
+    src:url('Alfa-Slab-One.ttf.woff') format('woff'),
+        url('Alfa-Slab-One.ttf.svg#Alfa-Slab-One') format('svg'),
+        url('Alfa-Slab-One.ttf.eot'),
+        url('Alfa-Slab-One.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color: #005aaa;
+  font-family: 'Alfa-Slab-One';
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.part {
+  display: inline-block;
+  padding: 20px; 
+  border-style: solid;
+  border-color: #004078;
+  border-width: 0 3px 0 0;
+}
+
+.bcd {
+  font-family: 'Digital-Numbers';
+  font-weight: bold;
+  font-size: 70px;
+  background-color: #004078;
+}
+
+.title {
+  font-size: 18px;
+}
+</style>
+
+<script src="luxon.min.js"></script>
+
+<script type="text/javascript">
+var abstieg = luxon.DateTime.local(2018,4,12,17,36)
+
+function tick() {
+    var jetzt = luxon.DateTime.local()
+    var vergangen = jetzt.diff(abstieg).toFormat("yy ddd hh mm ss").split(' ');
+        
+    document.getElementById("jahre").innerHTML = vergangen[0];
+    document.getElementById("tage").innerHTML = vergangen[1];
+    document.getElementById("stunden").innerHTML = vergangen[2];
+    document.getElementById("minuten").innerHTML = vergangen[3];
+    document.getElementById("sekunden").innerHTML = vergangen[4];
+}
+
+setInterval(tick, 1000);
+</script>
+</head>
+
+<body>
+
+<h1>In der 2. Bundesliga seit:</h1>
+
+<div class="part" style="border-left-width: 3px">
+  <div class="bcd" id="jahre">54</div>
+  <div class="title">Jahren</div>
+</div>
+
+<div class="part">
+  <div class="bcd" id="tage">261</div>
+  <div class="title">Tagen</div>
+</div>
+
+<div class="part">
+  <div class="bcd" id="stunden">00</div>
+  <div class="title">Stunden</div>
+</div>
+
+<div class="part">
+  <div class="bcd" id="minuten">36</div>
+  <div class="title">Minuten</div>
+</div>
+
+<div class="part">
+  <div class="bcd" id="sekunden">02</div>
+  <div class="title">Sekunden</div>
+</div>
+
+<div id="valid"></div>
+
+</body>
+
+</html>
