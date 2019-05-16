@@ -4,9 +4,15 @@ Eine Uhr, die die Zeit seit dem Abstieg der [HSV Fußball AG](https://www.hsv.de
 
 https://volksparkuhr.de
 
+## Vorbild
+
+https://www.kicker.de/news/fussball/bundesliga/startseite/723749/artikel_die-hsv-uhr-tickt-weiter-aber-anders.html
+
 ## Datum und Uhrzeit des Abstiegs
 
-12. Mai 2018 17:36 Uhr: https://www.kicker.de/news/fussball/bundesliga/spieltag/1-bundesliga/2017-18/34/3827891/spielverlauf_hamburger-sv-12_borussia-mgladbach-15.html
+12. Mai 2018 17:36 Uhr
+
+https://www.kicker.de/news/fussball/bundesliga/spieltag/1-bundesliga/2017-18/34/3827891/spielverlauf_hamburger-sv-12_borussia-mgladbach-15.html
 
 ## Freie Schriftarten
 
