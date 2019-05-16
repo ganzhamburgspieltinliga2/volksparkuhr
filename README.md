@@ -14,7 +14,7 @@ Digital Numbers: https://github.com/s-a/digital-numbers-font
 
 Alfa Slab One: https://fonts.google.com/specimen/Alfa+Slab+One
 
-(The original HSV font is that one: https://www.myfonts.com/fonts/mti/soho/pro-ultra/)
+(Die originale, nicht-freie HSV-Schrift: https://www.myfonts.com/fonts/mti/soho/pro-ultra/)
 
 ## Zeit-Berechnung
 
